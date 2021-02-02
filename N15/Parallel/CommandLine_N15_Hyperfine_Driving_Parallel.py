@@ -5,7 +5,7 @@ from matplotlib.ticker import MaxNLocator
 import sys
 commandline = sys.argv
 import os
-dirpath_pers = "/home/jiashentang/Desktop/Jiashen_Simulation/NV_HyperfineDriving/N15/VirtualMachine" #Change to personal directory
+dirpath_pers = "/home/walsworth1/Jiashen_Simulation/NV_HyperfineDriving/N15/Parallel/" #Change to personal directory
 if dirpath_pers not in sys.path:
     sys.path.insert(0, dirpath_pers)
 

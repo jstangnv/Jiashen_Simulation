@@ -4,7 +4,7 @@ from matplotlib.ticker import MaxNLocator
 
 import sys
 import os
-dirpath_pers = '/home/jiashentang/Desktop/Jiashen_Simulation/NV_HyperfineDriving/N15/VirtualMachine' #Change to personal directory
+dirpath_pers = '/home/walsworth1/Jiashen_Simulation/NV_HyperfineDriving/N15/Parallel/' #Change to personal directory
 if dirpath_pers not in sys.path:
     sys.path.insert(0, dirpath_pers)
 
@@ -98,7 +98,7 @@ t_list = np.linspace(0, t_pulse, ntimes)
 
 # ### Execute pulse sequences in parallel
 import math
-partitionflag = 1
+partitionflag = 0
 partitionnumber = 5
 if partitionflag == 1:
     if len(ls_pulsehandlers_HFDrive) <= partitionnumber:
